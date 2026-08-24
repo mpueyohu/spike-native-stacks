@@ -1,0 +1,10 @@
+name: ci
+on:
+  pull_request:
+  merge_group:
+jobs:
+  always-pass:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trivial always-pass check
+        run: echo "ok"
